@@ -1,0 +1,273 @@
+.m-container {
+    .visual-wrapper {
+        height: 1000px;
+        position: relative;
+
+        & > .text-box {
+            position: absolute;
+            top: 50%;
+            left: 170px;
+            z-index: 99;
+            transform: translateY(-70%);
+
+            p {
+                font-family: 'NexonGothicRegular';
+                font-size: 50px;
+                color: white;
+
+                &:last-of-type {
+                    font-family: 'NexonGothicBold';
+                    margin-top: 30px;
+                }
+            }
+        }
+        & > img {
+            width: 100%;
+            position: absolute;
+            bottom: -1px;
+            z-index: 99;
+        }
+        & > .swiper {
+            height: 100%;
+        }
+    }//visual-wrapper
+
+    .sec01 {
+        height: 555px;
+        padding: 0px 270px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 90px;
+
+        & > .item {
+            width: 400px;
+            height: 300px;
+            padding: 60px 0px 0px 40px;
+            box-sizing: border-box;
+            background-color: #c7d78e;
+            border-radius: 25px;
+            position: relative;
+
+            .category {
+                color: white;
+                font-family: 'NexonGothicLight';
+                font-size: 20px;
+            }
+            .title {
+                color: white;
+                font-family: 'NexonGothicMedium';
+                font-size: 35px;
+                margin-top: 14px;
+            }
+            img {
+                position: absolute;
+                right: 0px;
+                bottom: 0px;
+            }
+        }
+    }//sec01
+
+    .sec02{
+        height: 450px;
+        background-color: #ffefbe;
+        padding: 105px 0px 0px 134px;
+        box-sizing: border-box;
+        position: relative;
+        
+        & > .text{
+            font-family: 'NexonGothicRegular';
+            font-size: 30px;
+            color: #cda053;
+        }
+        & > .title{
+            font-family: 'NexonGothicBold';
+            font-size: 50px;
+            color: #835b17;
+            margin-top: 25px;
+            margin-bottom: 90px;
+        }
+        & > a{
+            width: 180px;
+            height: 50px;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            background-color: #835b17;
+            color: white;
+            font-family: 'NexonGothicRegular';
+            font-size: 24px;
+            .bx{
+                font-size: 12px;
+            }
+        }
+        & > img{
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        }
+    }//sec02
+
+    .sec03{
+        padding: 140px 0px;
+        box-sizing: border-box;
+
+        & > .inner{
+            width: 1380px;
+            height: 100%;
+            margin: 0px auto;
+            position: relative;
+
+            .title-box{
+                display: flex;
+                justify-content: center;
+                align-items: end;
+                margin-bottom: 70px;
+    
+                .title{
+                    font-family: 'NexonGothicBold';
+                    font-size: 48px;
+                    color: #222222;
+                }
+    
+                & > a{
+                    position: absolute;
+                    right: 0px;
+                    font-family: 'NexonGothicLight';
+                    font-size: 20px;
+                    color: #222222;
+    
+                    & > i{
+                        position: relative;
+                        bottom: -3px;
+                        font-size: 22px;
+                        margin-left: 6px;
+                    }
+                }
+            }
+
+            .item{
+                width: 330px;
+                height: 440px;
+                position: relative;
+
+                .category{
+                    width: 110px;
+                    height: 30px;
+                    border-radius: 15px;
+                    background-color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    top: 175px;
+                    left: 25px;
+                    color: #222222;
+                    font-family: 'NexonGothicRegular';
+                    font-size: 18px;
+                }
+                .img-box{
+                    width: 100%;
+                    height: 190px;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+
+                    img{
+                        width: 100%;
+                    }
+                }
+                .text-box{
+                    width: 100%;
+                    height: 250px;
+                    background-color: #dfdfdf;
+                    border-bottom-left-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                    padding: 40px 25px 75px;
+                    box-sizing: border-box;
+
+                    .title{
+                        font-family: 'NexonGothicMedium';
+                        font-size: 28px;
+                        color: #222222;
+                        margin-bottom: 15px;
+                    }
+                    .text{
+                        font-family: 'NexonGothicRegular';
+                        font-size: 18px;
+                        color: #222222;
+                        line-height: 1.5;
+                    }
+                }
+                a{
+                    font-family: 'NexonGothicRegular';
+                    font-size: 18px;
+                    color: #222222;
+                    position: absolute;
+                    bottom: 30px;
+                    right: 25px;
+
+                    i{
+                        font-size: 12px;
+                        margin-left: 4px;
+                    }
+                }
+            }
+
+            .swiper-button-prev,
+            .swiper-button-next{
+                color: gray;
+            }
+
+            .swiper-button-prev{
+                position: absolute;
+                top: 60%;
+                left: -120px;
+            }
+    
+            .swiper-button-next{
+                position: absolute;
+                top: 60%;
+                right: -120px;
+            }
+            
+        }
+
+
+    }//sec03
+
+    .sec04{
+        // height: 500px;
+        position: relative;
+
+        .sec04-bg{
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .text{
+            font-family: 'Cafe24SsurroundAir';
+            font-size: 38px;
+            color: white;
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -65%);
+
+            span{
+                font-family: 'Cafe24Ssurround';
+                margin-left: 10px;
+            }
+        }
+        .sec04-item{
+            width: 100%;
+
+        }
+    }//sec04
+}

@@ -1,0 +1,59 @@
+body,
+html {
+    max-width: 1920px;
+    margin: 0px auto;
+}
+
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+    border: none;
+    z-index: -1;
+}
+
+
+/* font */
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('../../font/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('../../font/Cafe24Ssurroundair.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NexonGothicLight';
+    src: url('../../font/NEXONLv2GothicLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NexonGothicRegular';
+    src: url('../../font/NEXONLv2GothicRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'NexonGothicMedium';
+  src: url('../../font/NEXONLv2GothicMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'NexonGothicBold';
+    src: url('../../font/NEXONLv2GothicBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

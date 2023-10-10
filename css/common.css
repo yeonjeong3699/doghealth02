@@ -1,0 +1,472 @@
+/* v2.0 | 20110126
+  http://meyerweb.com/eric/tools/css/reset/ 
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  /* font: inherit; */
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+button {
+  margin: 0px;
+  padding: 0px;
+}
+
+body,
+html {
+  max-width: 1920px;
+  margin: 0px auto;
+}
+
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  border: none;
+  z-index: -1;
+}
+
+/* font */
+@font-face {
+  font-family: "Cafe24Ssurround";
+  src: url("../../font/Cafe24Ssurround.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cafe24SsurroundAir";
+  src: url("../../font/Cafe24Ssurroundair.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NexonGothicLight";
+  src: url("../../font/NEXONLv2GothicLight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NexonGothicRegular";
+  src: url("../../font/NEXONLv2GothicRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NexonGothicMedium";
+  src: url("../../font/NEXONLv2GothicMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NexonGothicBold";
+  src: url("../../font/NEXONLv2GothicBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.h-container {
+  max-width: 1920px;
+  width: 100%;
+  height: 110px;
+  padding: 0px 60px;
+  box-sizing: border-box;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+.h-container .header-left {
+  display: flex;
+  align-items: center;
+  gap: 95px;
+}
+.h-container .header-left nav .gnb {
+  display: flex;
+  gap: 80px;
+}
+.h-container .header-left nav .gnb li a {
+  font-family: "NexonGothicMedium";
+  font-size: 25px;
+  color: white;
+}
+.h-container .header-right a .write {
+  font-size: 28px;
+  color: white;
+}
+.h-container .header-right a .login {
+  font-size: 28px;
+  color: white;
+  margin-left: 10px;
+}
+
+.f-container {
+  background-color: #1a1a1a;
+  padding: 60px;
+  box-sizing: border-box;
+}
+.f-container .footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 24px;
+}
+.f-container .footer-top img {
+  width: 170px;
+  height: 32px;
+  opacity: 40%;
+}
+.f-container .footer-top ul {
+  display: flex;
+  gap: 20px;
+}
+.f-container .footer-top ul li {
+  position: relative;
+}
+.f-container .footer-top ul li a {
+  font-family: "NexonGothicRegular";
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.f-container .footer-top ul .line:before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 14px;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  top: 2px;
+  left: -9px;
+}
+.f-container .footer-top ul .line:after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 14px;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  top: 2px;
+  right: -12px;
+}
+.f-container .text-box {
+  position: relative;
+}
+.f-container .text-box p {
+  margin-bottom: 6px;
+}
+.f-container .text-box span {
+  margin-right: 16px;
+}
+.f-container .text-box .text {
+  font-family: "NexonGothicRegular";
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.f-container .text-box .line:before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 16px;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  top: 24px;
+  left: 195px;
+}
+
+.m-container .visual-wrapper {
+  height: 1000px;
+  position: relative;
+}
+.m-container .visual-wrapper > .text-box {
+  position: absolute;
+  top: 50%;
+  left: 170px;
+  z-index: 99;
+  transform: translateY(-70%);
+}
+.m-container .visual-wrapper > .text-box p {
+  font-family: "NexonGothicRegular";
+  font-size: 50px;
+  color: white;
+}
+.m-container .visual-wrapper > .text-box p:last-of-type {
+  font-family: "NexonGothicBold";
+  margin-top: 30px;
+}
+.m-container .visual-wrapper > img {
+  width: 100%;
+  position: absolute;
+  bottom: -1px;
+  z-index: 99;
+}
+.m-container .visual-wrapper > .swiper {
+  height: 100%;
+}
+.m-container .sec01 {
+  height: 555px;
+  padding: 0px 270px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+}
+.m-container .sec01 > .item {
+  width: 400px;
+  height: 300px;
+  padding: 60px 0px 0px 40px;
+  box-sizing: border-box;
+  background-color: #c7d78e;
+  border-radius: 25px;
+  position: relative;
+}
+.m-container .sec01 > .item .category {
+  color: white;
+  font-family: "NexonGothicLight";
+  font-size: 20px;
+}
+.m-container .sec01 > .item .title {
+  color: white;
+  font-family: "NexonGothicMedium";
+  font-size: 35px;
+  margin-top: 14px;
+}
+.m-container .sec01 > .item img {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.m-container .sec02 {
+  height: 450px;
+  background-color: #ffefbe;
+  padding: 105px 0px 0px 134px;
+  box-sizing: border-box;
+  position: relative;
+}
+.m-container .sec02 > .text {
+  font-family: "NexonGothicRegular";
+  font-size: 30px;
+  color: #cda053;
+}
+.m-container .sec02 > .title {
+  font-family: "NexonGothicBold";
+  font-size: 50px;
+  color: #835b17;
+  margin-top: 25px;
+  margin-bottom: 90px;
+}
+.m-container .sec02 > a {
+  width: 180px;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #835b17;
+  color: white;
+  font-family: "NexonGothicRegular";
+  font-size: 24px;
+}
+.m-container .sec02 > a .bx {
+  font-size: 12px;
+}
+.m-container .sec02 > img {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.m-container .sec03 {
+  padding: 140px 0px;
+  box-sizing: border-box;
+}
+.m-container .sec03 > .inner {
+  width: 1380px;
+  height: 100%;
+  margin: 0px auto;
+  position: relative;
+}
+.m-container .sec03 > .inner .title-box {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-bottom: 70px;
+}
+.m-container .sec03 > .inner .title-box .title {
+  font-family: "NexonGothicBold";
+  font-size: 48px;
+  color: #222222;
+}
+.m-container .sec03 > .inner .title-box > a {
+  position: absolute;
+  right: 0px;
+  font-family: "NexonGothicLight";
+  font-size: 20px;
+  color: #222222;
+}
+.m-container .sec03 > .inner .title-box > a > i {
+  position: relative;
+  bottom: -3px;
+  font-size: 22px;
+  margin-left: 6px;
+}
+.m-container .sec03 > .inner .item {
+  width: 330px;
+  height: 440px;
+  position: relative;
+}
+.m-container .sec03 > .inner .item .category {
+  width: 110px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 175px;
+  left: 25px;
+  color: #222222;
+  font-family: "NexonGothicRegular";
+  font-size: 18px;
+}
+.m-container .sec03 > .inner .item .img-box {
+  width: 100%;
+  height: 190px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.m-container .sec03 > .inner .item .img-box img {
+  width: 100%;
+}
+.m-container .sec03 > .inner .item .text-box {
+  width: 100%;
+  height: 250px;
+  background-color: #dfdfdf;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 40px 25px 75px;
+  box-sizing: border-box;
+}
+.m-container .sec03 > .inner .item .text-box .title {
+  font-family: "NexonGothicMedium";
+  font-size: 28px;
+  color: #222222;
+  margin-bottom: 15px;
+}
+.m-container .sec03 > .inner .item .text-box .text {
+  font-family: "NexonGothicRegular";
+  font-size: 18px;
+  color: #222222;
+  line-height: 1.5;
+}
+.m-container .sec03 > .inner .item a {
+  font-family: "NexonGothicRegular";
+  font-size: 18px;
+  color: #222222;
+  position: absolute;
+  bottom: 30px;
+  right: 25px;
+}
+.m-container .sec03 > .inner .item a i {
+  font-size: 12px;
+  margin-left: 4px;
+}
+.m-container .sec03 > .inner .swiper-button-prev,
+.m-container .sec03 > .inner .swiper-button-next {
+  color: gray;
+}
+.m-container .sec03 > .inner .swiper-button-prev {
+  position: absolute;
+  top: 60%;
+  left: -120px;
+}
+.m-container .sec03 > .inner .swiper-button-next {
+  position: absolute;
+  top: 60%;
+  right: -120px;
+}
+.m-container .sec04 {
+  position: relative;
+}
+.m-container .sec04 .sec04-bg {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.m-container .sec04 .text {
+  font-family: "Cafe24SsurroundAir";
+  font-size: 38px;
+  color: white;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+}
+.m-container .sec04 .text span {
+  font-family: "Cafe24Ssurround";
+  margin-left: 10px;
+}
+.m-container .sec04 .sec04-item {
+  width: 100%;
+}
